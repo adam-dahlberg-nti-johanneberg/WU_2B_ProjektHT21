@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    border-color: white;
+}
+
+nav h1 {
+    color: gold;
+}
+
+#backgroundImage {
+    background-image: url(../img/watermark-designs-XL6gfkLmkOw-unsplash.jpg);
+    background-color: #cccccc;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
