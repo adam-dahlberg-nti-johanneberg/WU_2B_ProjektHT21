@@ -1,22 +1,81 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Raleway', sans-serif;
 }
 
 nav {
-    border-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flexbox;
+    background-color: #c4d6b0;
 }
 
 nav h1 {
-    color: gold;
+    color: #381d2a;
 }
 
-#backgroundImage {
+#gridWrapper {
+    display: grid;
+    width: 100%;
+    height: 500vh;
+
+    grid-template-areas: 
+        "mp mp"
+        "mp mp"
+        "l1W r1H"
+        "l1W r2W"
+        "l2W r2W"
+        "l2W r3W"
+        "l3W r3W"
+        "l3W r4W"
+        "l4H r4W"
+        "fo fo"
+    ;
+
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(9, 1fr) 6rem;
+}
+
+#mainPage {
+    grid-area: mp;
     background-image: url(../img/watermark-designs-XL6gfkLmkOw-unsplash.jpg);
-    background-color: #cccccc;
-    height: 500px;
-    background-position: center;
-    background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
+}
+#left1Whole {
+    grid-area: l1W;
+    background-color: aqua;
+}
+#right1Half {
+    grid-area: r1H;
+    background-color: aquamarine;
+}
+#left2Whole {
+    grid-area: l2W;
+    background-color: bisque;
+}
+#right2Whole {
+    grid-area: r2W;
+    background-color: blue;
+}
+#left3Whole {
+    grid-area: l3W;
+    background-color: blueviolet;
+}
+#right3Whole {
+    grid-area: r3W;
+    background-color: brown;
+}
+#left4Half {
+    grid-area: l4H;
+    background-color: cadetblue;
+}
+#right4Whole {
+    grid-area: r4W;
+    background-color: chartreuse;
+}
+#footer {
+    grid-area: fo;
+    background-color: coral;
 }
