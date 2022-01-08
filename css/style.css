@@ -1,8 +1,12 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Raleway', sans-serif;
-    
+    font-family: 'Raleway', sans-serif;  
+    font-size: 20px;
+}
+
+h1 {
+    font-size: 50px;
 }
 
 nav {
@@ -10,6 +14,7 @@ nav {
     position: fixed;
     top: 0;
     width: 100%;
+    height: 80px;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
@@ -21,22 +26,47 @@ nav h1 {
     font-family: 'Corinthia', cursive;
     font-size: 60px;
     align-self: center;
+    margin-left: 20px;
 }
 
-nav ul {
+.rightNavWrapper {
     display: flex;
     flex-wrap: wrap;
+    margin-right: 30px;
 }
 
-nav ul li {
+.rightNavWrapper ul {
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 60px;
+}
+
+.rightNavWrapper ul {
     list-style: none;
 }
 
+.rightNavWrapper ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.rightNavWrapper ul li a:hover {
+    color: rgb(90, 90, 90);
+    text-decoration: underline;
+}
+
+.hamburgerMenu {
+    margin: 0;
+}
+
 .bar {
-    width: 3rem;
-    height: 0.4rem;
+    width: 48px;
+    height: 6px;
     background-color: black;
-    margin-top: 0.4rem;
+    margin: 6px;
     border-radius: 2px;
     align-self: flex-start;
 }
@@ -44,10 +74,8 @@ nav ul li {
 #gridWrapper {
     display: grid;
     width: 100%;
-    height: 500vh;
 
     grid-template-areas: 
-        "mp mp"
         "mp mp"
         "l1W r1H"
         "l1W r2W"
@@ -60,8 +88,10 @@ nav ul li {
     ;
 
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(9, 1fr) 6rem;
+    grid-template-rows: minmax(800px, 100vh) repeat(7, minmax(300px, calc(50vh - 40px))) 96px;
 }
+
+
 
 #mainPage {
     grid-area: mp;
@@ -70,44 +100,70 @@ nav ul li {
     display: grid;
     align-items: center;
     justify-content: center;
+    max-height: 100wh;
 }
 
 #mainPage img {
     height: 30%;
 }
 
+
+
+
+
 #left1Whole {
     grid-area: l1W;
-    background-color: aqua;
+    background-color: white;
+    background-image: url(../img/christian-mackie-cc0Gg3BegjE-unsplash.jpg);
+    background-size: cover;
 }
+
 #right1Half {
     grid-area: r1H;
-    background-color: aquamarine;
+    background-color: white;
+    color: white;
+    background-image: url(../img/ty-finck-U_2AlnfIGIU-unsplash.jpg);
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
 }
+
+#right1Half h1 {
+    font-family: 'Courier New', Courier, monospace;
+}
+
 #left2Whole {
     grid-area: l2W;
     background-color: bisque;
 }
+
 #right2Whole {
     grid-area: r2W;
     background-color: blue;
 }
+
 #left3Whole {
     grid-area: l3W;
     background-color: blueviolet;
 }
+
 #right3Whole {
     grid-area: r3W;
     background-color: brown;
 }
+
 #left4Half {
     grid-area: l4H;
     background-color: cadetblue;
 }
+
 #right4Whole {
     grid-area: r4W;
     background-color: chartreuse;
 }
+
 #footer {
     grid-area: fo;
     background-color: coral;
