@@ -264,7 +264,37 @@ nav h1 {
 
 #left4Half {
     grid-area: l4H;
-    background-color: cadetblue;
+    background-color: white;
+    color: black;
+    background-image: url(../img/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#left4Half h1 {
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 10%;
+}
+
+#left4Half div {
+    width: 90%;
+    text-align: center;
+    font-size: 40px;
+}
+
+#left4Half div a {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 10px;
+}
+
+#left4Half div a:hover {
+    color: rgb(90, 90, 90);
+    text-decoration: underline;
 }
 
 #right4Whole {
