@@ -1,8 +1,12 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Raleway', sans-serif;  
-    font-size: 20px;
+    font-family: 'Dosis', sans-serif;  
+    font-size: 30px;
+}
+
+body {
+    background-color: black;
 }
 
 h1 {
@@ -19,6 +23,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     background-color: white;
+    z-index: 2;
 }
 
 nav h1 {
@@ -38,7 +43,7 @@ nav h1 {
 .rightNavWrapper ul {
     display: flex;
     flex-wrap: wrap;
-    width: 300px;
+    width: 350px;
     justify-content: space-between;
     align-items: center;
     margin-right: 60px;
@@ -116,6 +121,28 @@ nav h1 {
     background-color: white;
     background-image: url(../img/christian-mackie-cc0Gg3BegjE-unsplash.jpg);
     background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+}
+
+#left1Whole h1 {
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 10%;
+}
+
+#left1Whole div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#left1Whole img {
+    width: 100px;
+    height: auto;
 }
 
 #right1Half {
@@ -132,26 +159,107 @@ nav h1 {
 
 #right1Half h1 {
     font-family: 'Courier New', Courier, monospace;
+    margin-top: 10%;
+}
+
+#right1Half div {
+    width: 90%;
+    text-align: center;
 }
 
 #left2Whole {
     grid-area: l2W;
-    background-color: bisque;
+    background-color: white;
+    color: white;
+    background-image: url(../img/febrian-zakaria-SiQgni-cqFg-unsplash.jpg);
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    background-position: center;
+}
+
+#left2Whole h1 {
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 10%;
+    color: black;
+    text-align: center;
+}
+
+#left2Whole div {
+    width: 90%;
+    text-align: center;
 }
 
 #right2Whole {
     grid-area: r2W;
-    background-color: blue;
+    background-color: white;
+    color: white;
+    background-image: url(../img/chad-montano-eeqbbemH9-c-unsplash.jpg);
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#right2Whole h1 {
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 20%;
+}
+
+#right2Whole div {
+    width: 90%;
+    text-align: center;
 }
 
 #left3Whole {
     grid-area: l3W;
-    background-color: blueviolet;
+    background-color: white;
+    color: black;
+    background-image: url(../img/nathan-dumlao-m0ucB-06v7k-unsplash.jpg);
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#left3Whole h1 {
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 10%;
+    text-align: center;
+}
+
+#left3Whole div {
+    width: 90%;
+    text-align: center;
 }
 
 #right3Whole {
     grid-area: r3W;
-    background-color: brown;
+    background-color: white;
+    color: white;
+    background-image: url(../img/nathan-dumlao-bRdRUUtbxO0-unsplash.jpg);
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    backdrop-filter: blur(2px);
+}
+
+#right3Whole h1 {
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 10%;
+    text-align: center;
+}
+
+#right3Whole div {
+    width: 90%;
+    text-align: center;
+    border-radius: 5px;
 }
 
 #left4Half {
@@ -161,7 +269,25 @@ nav h1 {
 
 #right4Whole {
     grid-area: r4W;
-    background-color: chartreuse;
+    background-color: white;
+    color: white;
+    background-image: url(../img/stephanie-mccabe-U3zasaqWD-I-unsplash.jpg);
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#right4Whole h1 {
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 10%;
+    text-align: center;
+}
+
+#right4Whole div {
+    width: 90%;
+    text-align: center;
 }
 
 #footer {
