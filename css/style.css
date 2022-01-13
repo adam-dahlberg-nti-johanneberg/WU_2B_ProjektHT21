@@ -26,13 +26,18 @@ nav {
     z-index: 2;
 }
 
-nav h1 {
+nav > h1 {
     color: black;
-    font-family: 'Corinthia', cursive;
-    font-size: 60px;
     align-self: center;
     margin-left: 20px;
 }
+
+nav > h1 > a {
+    color: inherit;
+    text-decoration: none;
+    font-family: 'Corinthia', cursive;
+    font-size: 60px;
+} 
 
 .rightNavWrapper {
     display: flex;
