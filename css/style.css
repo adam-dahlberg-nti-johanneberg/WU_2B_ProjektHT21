@@ -37,7 +37,6 @@ nav h1 {
 .rightNavWrapper {
     display: flex;
     flex-wrap: wrap;
-    margin-right: 30px;
 }
 
 .rightNavWrapper ul {
@@ -61,19 +60,6 @@ nav h1 {
 .rightNavWrapper ul li a:hover {
     color: rgb(90, 90, 90);
     text-decoration: underline;
-}
-
-.hamburgerMenu {
-    margin: 0;
-}
-
-.bar {
-    width: 48px;
-    height: 6px;
-    background-color: black;
-    margin: 6px;
-    border-radius: 2px;
-    align-self: flex-start;
 }
 
 #gridWrapper {
@@ -148,7 +134,7 @@ nav h1 {
 #right1Half {
     grid-area: r1H;
     background-color: white;
-    color: white;
+    color: black;
     background-image: url(../img/ty-finck-U_2AlnfIGIU-unsplash.jpg);
     background-size: cover;
     display: flex;
@@ -160,17 +146,19 @@ nav h1 {
 #right1Half h1 {
     font-family: 'Courier New', Courier, monospace;
     margin-top: 10%;
+    color: white;
 }
 
 #right1Half div {
     width: 90%;
     text-align: center;
+    background-color: white;
 }
 
 #left2Whole {
     grid-area: l2W;
     background-color: white;
-    color: white;
+    color: black;
     background-image: url(../img/febrian-zakaria-SiQgni-cqFg-unsplash.jpg);
     background-size: cover;
     display: flex;
@@ -190,12 +178,13 @@ nav h1 {
 #left2Whole div {
     width: 90%;
     text-align: center;
+    background-color: white;
 }
 
 #right2Whole {
     grid-area: r2W;
     background-color: white;
-    color: white;
+    color: black;
     background-image: url(../img/chad-montano-eeqbbemH9-c-unsplash.jpg);
     background-size: cover;
     display: flex;
@@ -207,11 +196,13 @@ nav h1 {
 #right2Whole h1 {
     font-family: 'Courier New', Courier, monospace;
     margin-top: 20%;
+    color: white;
 }
 
 #right2Whole div {
     width: 90%;
     text-align: center;
+    background-color: white;
 }
 
 #left3Whole {
@@ -235,12 +226,14 @@ nav h1 {
 #left3Whole div {
     width: 90%;
     text-align: center;
+    background-color: white;
+    background-color: white;
 }
 
 #right3Whole {
     grid-area: r3W;
     background-color: white;
-    color: white;
+    color: black;
     background-image: url(../img/nathan-dumlao-bRdRUUtbxO0-unsplash.jpg);
     background-size: cover;
     display: flex;
@@ -254,18 +247,19 @@ nav h1 {
     font-family: 'Courier New', Courier, monospace;
     margin-top: 10%;
     text-align: center;
+    color: white;
 }
 
 #right3Whole div {
     width: 90%;
     text-align: center;
     border-radius: 5px;
+    background-color: white;
 }
 
 #left4Half {
     grid-area: l4H;
-    background-color: white;
-    color: black;
+    color: white;
     background-image: url(../img/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
     background-size: cover;
     display: flex;
@@ -300,7 +294,7 @@ nav h1 {
 #right4Whole {
     grid-area: r4W;
     background-color: white;
-    color: white;
+    color: black;
     background-image: url(../img/stephanie-mccabe-U3zasaqWD-I-unsplash.jpg);
     background-size: cover;
     display: flex;
@@ -313,14 +307,21 @@ nav h1 {
     font-family: 'Courier New', Courier, monospace;
     margin-top: 10%;
     text-align: center;
+    color: white;
 }
 
 #right4Whole div {
     width: 90%;
     text-align: center;
+    background-color: white;
 }
 
 #footer {
     grid-area: fo;
-    background-color: coral;
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
