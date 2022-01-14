@@ -1,3 +1,5 @@
+/* THIS FILE APPLIES TO EVERYONE PAGE */
+
 * {
     margin: 0;
     padding: 0;
@@ -12,6 +14,8 @@ body {
 h1 {
     font-size: 50px;
 }
+
+/* NAV STYLING */
 
 nav {
     display: flex;
@@ -67,6 +71,8 @@ nav > h1 > a {
     text-decoration: underline;
 }
 
+/* GRID WRAPPER SETUP */
+
 #gridWrapper {
     display: grid;
     width: 100%;
@@ -87,7 +93,7 @@ nav > h1 > a {
     grid-template-rows: minmax(800px, 100vh) repeat(7, minmax(300px, calc(50vh - 40px))) 96px;
 }
 
-
+/* MAIN PAGE STYLING */
 
 #mainPage {
     grid-area: mp;
@@ -103,9 +109,7 @@ nav > h1 > a {
     height: 30%;
 }
 
-
-
-
+/* INDIVIDUAL GRID BLOCK STYLING */
 
 #left1Whole {
     grid-area: l1W;
@@ -157,7 +161,7 @@ nav > h1 > a {
 #right1Half div {
     width: 90%;
     text-align: center;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 #left2Whole {
@@ -183,7 +187,7 @@ nav > h1 > a {
 #left2Whole div {
     width: 90%;
     text-align: center;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 #right2Whole {
@@ -207,7 +211,7 @@ nav > h1 > a {
 #right2Whole div {
     width: 90%;
     text-align: center;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 #left3Whole {
@@ -259,7 +263,7 @@ nav > h1 > a {
     width: 90%;
     text-align: center;
     border-radius: 5px;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 #left4Half {
@@ -318,7 +322,7 @@ nav > h1 > a {
 #right4Whole div {
     width: 90%;
     text-align: center;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 #footer {
@@ -329,4 +333,80 @@ nav > h1 > a {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+}
+
+/* BOKA-PAGE STYLING */
+
+#bokaMain {
+    width: auto;
+    height: calc(100vh - 80px);
+    background-image: url(../img/photo-1428515613728-6b4607e44363.jpg);
+    background-size: cover;
+    margin: 0px;
+}
+
+iframe {
+    height: 40vh;
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    justify-self: center;
+    align-self: center;
+    background-color: white;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+#bokaText {
+    background-color: white;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 50%;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 15px;
+}
+
+/* KONTAKT-PAGE STYLING */
+
+#kontaktMain {
+    width: auto;
+    height: calc(100vh - 80px);
+    background-image: url(../img/peter-dawn-mM-L0yx5LcQ-unsplash.jpg);
+    background-size: cover;
+    margin-top: 80px;
+}
+
+#kontaktText {
+    background-color: white;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 50%;
+    margin: auto;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+/* MISC */
+
+footer {
+    background-color: white;
+    display: flex;
+    height: 96px;
+    align-items: center;
+    justify-content: center;
+}
+
+#bokaButton > a {
+    box-shadow: 5px 5px black;
+}
+
+hr {
+    margin-top: 5px;
 }
