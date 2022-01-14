@@ -1,4 +1,4 @@
-/* THIS FILE APPLIES TO EVERYONE PAGE */
+/* THIS FILE APPLIES TO EVERY PAGE */
 
 * {
     margin: 0;
@@ -360,7 +360,7 @@ iframe {
 }
 
 #bokaText {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.5);
     padding-right: 40px;
     padding-left: 40px;
     padding-top: 10px;
@@ -382,7 +382,7 @@ iframe {
 }
 
 #kontaktText {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.5);
     padding-right: 40px;
     padding-left: 40px;
     padding-top: 10px;
